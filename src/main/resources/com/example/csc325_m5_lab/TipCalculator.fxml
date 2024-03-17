@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TotalBillController">
+   <children>
+      <TextField fx:id="BillAmountTextField" alignment="TOP_LEFT" layoutX="232.0" layoutY="101.0" promptText="Enter an integer number" />
+      <Label alignment="CENTER" layoutX="104.0" layoutY="107.0" prefHeight="23.0" prefWidth="118.0" text="Bill Amount" />
+      <Label alignment="CENTER" layoutX="6.0" layoutY="157.0" prefHeight="27.0" prefWidth="129.0" text="Tip Percentage" />
+      <Label alignment="CENTER" layoutX="104.0" layoutY="200.0" prefHeight="23.0" prefWidth="118.0" text="Tip" />
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="104.0" layoutY="250.0" prefHeight="23.0" prefWidth="118.0" text="Total" underline="true" />
+      <TextField fx:id="TipTextField" alignment="TOP_LEFT" layoutX="232.0" layoutY="194.0" />
+      <TextField fx:id="TotalTextField" alignment="TOP_LEFT" layoutX="232.0" layoutY="244.0" />
+      <ScrollBar fx:id="TipScrollBar" layoutX="232.0" layoutY="159.0" prefHeight="22.0" prefWidth="202.0" />
+      <Label layoutX="456.0" layoutY="157.0" prefHeight="27.0" prefWidth="0.0" />
+      <Button fx:id="CalculateButton" layoutX="305.0" layoutY="297.0" mnemonicParsing="false" onAction="#CalculateTotal" text="Calculate" />
+      <TextField fx:id="TipPercentageValue" layoutX="137.0" layoutY="151.0" prefHeight="39.0" prefWidth="53.0" />
+   </children>
+</AnchorPane>
