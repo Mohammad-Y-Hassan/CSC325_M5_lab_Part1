@@ -18,6 +18,9 @@ public class TotalBillController {
     private static final NumberFormat percent = NumberFormat.getPercentInstance();
     private BigDecimal TipPercentage = new BigDecimal(0.15);
     @FXML
+    private TextField TipPercentageValue;
+
+    @FXML
     private Label TipPercentageLabel;
 
     @FXML
@@ -52,18 +55,17 @@ public class TotalBillController {
     }
 
     public void initialize() {
-
         currency.setRoundingMode(RoundingMode.HALF_UP);
 
         TipScrollBar.valueProperty().addListener(
                 new ChangeListener<Number>() {
                     @Override
                     public void changed(ObservableValue<? extends Number> ov, Number oldValue, Number newValue) {
-                        TipPercentage = BigDecimal.valueOf(newValue.intValue() / 100.0);
-                        TipPercentageLabel.setText(percent.format(TipPercentage));
+                        double value = newValue.doubleValue();
+                        TipPercentage = BigDecimal.valueOf(value / 100.0);
+                        TipPercentageValue.setText(percent.format(TipPercentage));
                     }
                 }
         );
-
     }
 }

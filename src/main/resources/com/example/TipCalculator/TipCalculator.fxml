@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TotalBillController">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_m5_lab.TotalBillController">
    <children>
       <TextField fx:id="BillAmountTextField" alignment="TOP_LEFT" layoutX="232.0" layoutY="101.0" promptText="Enter an integer number" />
       <Label alignment="CENTER" layoutX="104.0" layoutY="107.0" prefHeight="23.0" prefWidth="118.0" text="Bill Amount" />
@@ -22,4 +22,4 @@
       <Button fx:id="CalculateButton" layoutX="305.0" layoutY="297.0" mnemonicParsing="false" onAction="#CalculateTotal" text="Calculate" />
       <TextField fx:id="TipPercentageValue" layoutX="137.0" layoutY="151.0" prefHeight="39.0" prefWidth="53.0" />
    </children>
-</AnchorPane>
+</fx:root>
